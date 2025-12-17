@@ -1,2 +1,2 @@
 # WhatClient
-a Whatsapp Client, with tools (UnOfficial)
+um Whatsapp Client, com tools (não-official)
