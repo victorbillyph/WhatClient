@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #020617, #000);
+  font-family: system-ui, sans-serif;
+  color: #e5e7eb;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: rgba(2, 6, 23, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1e293b;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status.init { background: #334155; }
+.status.qr { background: #facc15; color: #000; }
+.status.ready { background: #22c55e; color: #000; }
+.status.disconnected { background: #fb923c; }
+.status.error { background: #ef4444; }
+
+.center-card {
+  margin: 80px auto;
+  width: 300px;
+  text-align: center;
+  background: rgba(15, 23, 42, 0.7);
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 40px #000;
+}
+
+.center-card img {
+  width: 220px;
+  border-radius: 12px;
+}
+
+.chat-container {
+  max-width: 900px;
+  margin: 24px auto;
+  background: rgba(2, 6, 23, 0.7);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.bubble {
+  background: linear-gradient(145deg, #020617, #020617aa);
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  max-width: 70%;
+}
+
+.from {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.composer {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #1e293b;
+}
+
+.composer input {
+  flex: 1;
+  padding: 12px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  color: white;
+}
+
+.composer button {
+  background: #22c55e;
+  border: none;
+  padding: 0 18px;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.center-text {
+  margin-top: 120px;
+  text-align: center;
+  color: #94a3b8;
+}
