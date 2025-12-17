@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node ./backend/src/index.ts",
-    "frontend": "vite --host --base ./frontend/src",
+    "frontend": "vite ./frontend/src --host",
     "start": "node ./backend/src/dist/index.js"
   },
   "dependencies": {
